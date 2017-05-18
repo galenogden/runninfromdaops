@@ -1,0 +1,7 @@
+//runs the entire program
+public class runninFromDaOps {
+   
+   //main method for the whole program
+   public static void main (String [] args) {
+   }
+}
