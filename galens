@@ -64,3 +64,5 @@ public class board {
       g.fillOval(xpos + 3, ypos - 4, 3, 3);
    }
 }
+
+//hello today I worked on figuring out how to use a Jpanel but I didn't get anywhere. cool
