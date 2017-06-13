@@ -1,0 +1,23 @@
+import java.awt.*;
+import javax.swing.*;
+
+public class runninFromDaOps extends JPanel{
+   
+   
+   public runninFromDaOps(String filename, int x, int y){
+      ImageIcon img = new ImageIcon(new ImageIcon(filename).getImage().getScaledInstance(20, 20, Image.SCALE_DEFAULT));
+      JLabel label = new JLabel(img);
+      add(label);
+      label.setLocation(x, y);
+   }
+   
+   
+   public static void main(String[] args){
+      JFrame frame = new JFrame();
+      frame.setSize(500, 500);  
+      frame.add(new runninFromDaOps("pacman.png", 100, 100)); //even though I set the location, neither icon is placed where it should be
+      frame.add(new runninFromDaOps("ops.png", 300, 300)); //this image is layered over the other
+      frame.setVisible(true);  
+      
+   }
+}
